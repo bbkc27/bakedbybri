@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background: #D9A795;
+  background: #e1bcaf;
   height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #466349;
@@ -71,4 +71,21 @@
 
 .title {
   margin: 8vh;
+}
+
+.search{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search input{
+  max-width: 25vw;
+  border: solid #466349 0.2rem;
+  border-radius: .25rem;
+  margin-top: .5rem;
+}
+
+.searchInputHeader {
+  padding-bottom: 3px;
 }

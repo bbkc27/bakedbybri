@@ -1,4 +1,6 @@
 import React from 'react'
+import '../App.css';
+
 
 function SearchForm({query, setQuery, pagesVisited}) {
   
@@ -9,12 +11,12 @@ function SearchForm({query, setQuery, pagesVisited}) {
   return (
     <div>
       {
-        pagesVisited !==0
-        ? null
-        : 
+        // pagesVisited !==0
+        // ? null
+        // : 
         <div className='search'>
-          <label htmlFor='searchInput'>Find Recipes: </label>
-          <input type="text" id="searchInput" onChange={handleChange} />
+          <label htmlFor='searchInputHeader'>Discover Baked Goodness </label>
+          <input type="text" id="search input" onChange={handleChange} />
         </div>
       }
     </div>
