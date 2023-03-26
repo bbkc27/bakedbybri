@@ -5,6 +5,7 @@ import {Navbar, Container} from 'react-bootstrap';
 import HeaderLogo from './HeaderLogo.png';
 // import SearchForm from './components/SearchForm';
 import RecipeList from './components/RecipeList';
+import IngredientList from './components/IngredientList';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/recipes' element={<RecipeList />} />
+          <Route path='/ingredients' element={<IngredientList />} />
         </Routes>
       </div>
 
