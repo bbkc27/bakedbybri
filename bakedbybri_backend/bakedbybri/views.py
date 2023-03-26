@@ -16,7 +16,7 @@ class CreateUser(generics.CreateAPIView):
 class IngredientList(generics.ListCreateAPIView):
     serializer_class = IngredientSerializer
     queryset = Ingredients.objects.all()
-    permissions_classes = [permissions.IsAuthenticatedOrReadOnly]
+    permissions_classes = [permissions.AllowAny]
 
 
 class IngredientDetail(generics.RetrieveUpdateDestroyAPIView):

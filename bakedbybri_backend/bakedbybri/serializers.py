@@ -40,12 +40,12 @@ class PostSerializer(serializers.ModelSerializer):
 
    class Meta:
       model = Post
-      fields = ('author', 'title', 'ingredients','duration','category','recipe')
+      fields = ('id','author', 'uuid', 'title', 'ingredients','duration','category','recipe')
 
 class IngredientSerializer(serializers.ModelSerializer):
    
    post_list = PostSerializer(many=True, read_only=True)
 
    class Meta:
-      model = Post
-      fields = ('name', 'post_list')
+      model = Ingredients
+      fields = ('id','name', 'post_list')
